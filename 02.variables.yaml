@@ -4,8 +4,9 @@
   vars:
     COURSE: "DevOps with AWS"
     DURATION: "140HRS"
-    TRAINER: "Sivakumar Reddy"
+    TRAINER: "Sateesh"
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: "Course is: {{ COURSE }}, Trainer is: {{ TRAINER }}"
+      msg: "Course is: {{ COURSE }} "
+      msg: " Trainer is: {{ TRAINER }}"
