@@ -1,11 +1,11 @@
-- name: varaiables at playbook level
+- name: play level variables
   hosts: local
   connection: local
   vars:
-    EMPNAME: "sateesh"
-    ID: 1320733
+    COURSE: "DevOps with AWS"
+    DURATION: "140HRS"
+    TRAINER: "Sivakumar Reddy"
   tasks:
-  - name: print the varaiables
+  - name: print variables
     ansible.builtin.debug:
-      msg: " Employee id is {{ EMPNAME }} "
-      msg: " Employee id is {{ ID }} "
+      msg: "Course is: {{ COURSE }}, Trainer is: {{ TRAINER }}"
