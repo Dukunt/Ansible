@@ -1,8 +1,8 @@
 - name: file level variables
   hosts: local
   connection: local
-  vars_file:
-   -Allvars.yaml
+  vars_files:
+  - Allvars.yaml
   tasks:
   - name: print variabls from file
     ansible.builtin.debug:
