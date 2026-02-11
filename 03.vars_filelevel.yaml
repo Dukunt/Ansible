@@ -1,0 +1,11 @@
+- name: file level variables
+  hosts: local
+  connection: local
+  vars_file:
+   -Allvars.yaml
+  tasks:
+  - name: print variabls from file
+    ansible.builtin.debug:
+     msg: " I develop app with {{ FRONTEND }}, Database with {{ DB }} and messaging queue as {{ MESSAGE }} "
+
+   
