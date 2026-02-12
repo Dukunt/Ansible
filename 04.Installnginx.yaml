@@ -12,5 +12,13 @@
      name: nginx
      state: started
      enabled: yes
+  - name: Stop nginx
+    ansible.builtin.service:
+     name: nginx
+     state: stopped
+  - name: delete nginx
+    ansible.builtin.package:
+     name: nginx
+     state: absent      
 
 
