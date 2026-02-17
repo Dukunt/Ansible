@@ -17,4 +17,11 @@
      NAME: " Shiva kumar Reddy"
     ansible.builtin.debug:
      msg: "Trainerr name is {{ NAME }}"      
-      
+
+- name: Argument variable 
+  hosts: local
+  connection: local
+  tasks:
+  - name:  print variable passed in Argument
+    ansible.builtin.debug:
+     msg: " This is the variable passed in argument {{ ARG }}"      
