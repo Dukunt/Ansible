@@ -1,0 +1,11 @@
+- name: prompt varaiables
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: app_name
+    prompt: please enter the application name
+    private: false
+  tasks:
+  - name: print prompt variable
+    ansible.builtin.debug:
+     msg: " this is promot variable {{ app_name }}"  
