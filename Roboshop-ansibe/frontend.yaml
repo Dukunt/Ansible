@@ -28,7 +28,7 @@
   - name: extract or unzip the conetnt
     ansible.builtin.unarchive:
      source: /tmp/frontend.zip
-     destination: /usr/share/nginx/html
+     dest: /usr/share/nginx/html
      remote_src: yes
 
   - name: remove default configuartion
