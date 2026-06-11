@@ -8,7 +8,7 @@
   - name: installing nginx
     ansible.builtin.dnf: 
      name: nginx   
-     status: present
+     state: present
 
   - name: remove default conetnt
     ansible.builtin.file:
